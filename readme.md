@@ -1,1 +1,3 @@
-Salient object detection networks framework based on Pytorch.
+## DHS net
+
+DHS net for salient objects detection.

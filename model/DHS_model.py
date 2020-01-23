@@ -140,8 +140,7 @@ class DHS(nn.Module):
         x = self.upsample(x)
         x = self.layer4.forward(c1, x)
         x5 = x
-        return torch.sigmoid(x1), torch.sigmoid(x2), torch.sigmoid(
-            x3), torch.sigmoid(x4), torch.sigmoid(x5)
+        return torch.sigmoid(x1), torch.sigmoid(x2), torch.sigmoid(x3), torch.sigmoid(x4), torch.sigmoid(x5)
 
     def __copy_param(self):
         """Load parameters from pretrained VGG16 net."""
